@@ -16,7 +16,7 @@ function listProgress() {
 		turn <= maxTurns
 			? "█".repeat(turn) + "░".repeat(maxTurns - turn)
 			: "█".repeat(maxTurns);
-	console.log(`Time until sunset: ☀︎ ${progressBar} ☽`);
+	console.log(`Time until nightfall: ${progressBar} ☽`);
 }
 
 function listItems() {
@@ -141,7 +141,7 @@ function knock() {
 
 	removePossibleAction("knock()");
 	advanceTurn(
-		"You approach a nearby house. Curtrains are drawn, backlit by dim, flickering lights — a television? Ascending a small set of steps, you pause before the front door, then knock. Silence. No one answers. A wave of tinnitus pierces your ears. You sway with momentary dizziness before deciding to return to the main road.",
+		"You approach a nearby house. Curtrains are drawn, backlit by dim, flickering lights — a television? Ascending a small set of steps, you pause before the front door, then knock. You sense an unseen shifting, but no one answers. You return to the main road.",
 	);
 }
 
